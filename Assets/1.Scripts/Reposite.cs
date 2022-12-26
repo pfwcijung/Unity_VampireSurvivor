@@ -2,8 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RepositBG : MonoBehaviour
+public class Reposite : MonoBehaviour
 {
+    Collider2D coll;
+
+    void Awake()
+    {
+        coll = GetComponent<Collider2D>();    
+    }
+
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (!collision.CompareTag("Area"))
@@ -29,6 +36,12 @@ public class RepositBG : MonoBehaviour
                 else if (dirX < diffY)
                 {
                     transform.Translate(Vector3.up * dirY * 40);
+                }
+                break;
+            case "Enemy":
+                if (coll.enabled)
+                {
+                    transform.Translate(playerDir * 20 + new Vector3(Random.Range(-3f, 3f), Random.Range(-3f, 3f), 0f));
                 }
                 break;
         }
