@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1142654445613121634}
-  - component: {fileID: 1142654445613121635}
+  - component: {fileID: 7061172070504101978}
   - component: {fileID: 1142654445613121632}
   - component: {fileID: 1142654445613121629}
   - component: {fileID: 1142654445613121628}
@@ -38,7 +38,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1142654445613121635
+--- !u!114 &7061172070504101978
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -117,7 +117,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!95 &1142654445613121628
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -134,7 +134,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!50 &1142654445613121631
 Rigidbody2D:
   serializedVersion: 4

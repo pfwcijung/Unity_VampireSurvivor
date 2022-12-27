@@ -5,11 +5,10 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-    public float gameTime;
-    public float maxGameTime = 2 * 10f;
-
-    [SerializeField] public SpawnManager spawn;
     [SerializeField] public Player player;
+    [SerializeField] public SpawnManager spawn;
+    [SerializeField] public float gameTime;
+    [SerializeField] public float maxGameTime = 30 * 60f;
 
     void Awake()
     {
