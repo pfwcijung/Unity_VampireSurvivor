@@ -9,7 +9,6 @@ public class Player : MonoBehaviour
     public Vector2 inputVec;
     public HpController hpCont;
 
-
     float curHp = 100;
     float maxHp = 100;
 
@@ -48,11 +47,19 @@ public class Player : MonoBehaviour
         if (collision.tag.Equals("Enemy"))
         {
             Damage(.5f);
+            GameManager.instance.killCount++;
+            GameManager.instance.exp += 10;
         }
     }
     public void Damage(float damage)
     {
         curHp -= damage;
         hpCont.SetRenderSize(curHp, maxHp);
+        if (curHp <= 0)
+            Die();
+    }
+    void Die()
+    {
+
     }
 }

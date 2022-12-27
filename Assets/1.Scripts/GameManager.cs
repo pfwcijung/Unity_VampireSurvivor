@@ -7,19 +7,35 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     [SerializeField] public Player player;
     [SerializeField] public SpawnManager spawn;
-    public float gameTime;
-    private float maxGameTime = 30 * 60f;
+    [SerializeField] public float gameTime;
+    [SerializeField] public float maxGameTime = 30 * 60f;
+    void Awake() => instance = this;
+    public int level { get; set; }
+    public int killCount { get; set; }
+    public int exp { get; set; }
+    public int lvUpExp { get; set; }
 
-    void Awake()
+    void Start()
     {
-        instance = this;   
+        level = 1;
+        killCount = 0;
+        exp = 0;
+        lvUpExp = 100;
     }
+
     void Update()
     {
         gameTime += Time.deltaTime;
         if (gameTime > maxGameTime)
         {
             gameTime = maxGameTime;
+        }
+
+        if(exp >= lvUpExp)
+        {
+            level++;
+            exp = 0;
+            lvUpExp *= 2;
         }
     }
 }

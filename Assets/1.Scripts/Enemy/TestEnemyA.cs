@@ -16,6 +16,10 @@ public class TestEnemyA : TestEnemy
         ed.rigid = rigid;
         ed.sprite = sprite;
     }
+    public override void SetTarget()
+    {
+        base.SetTarget();
+    }
 
     public override void Move()
     {
@@ -26,8 +30,5 @@ public class TestEnemyA : TestEnemy
     {
         base.SetRotation();
     }
-    public override void SetTarget()
-    {
-        base.SetTarget();
-    }
+
 }

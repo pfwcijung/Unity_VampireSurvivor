@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public struct EnemyData
@@ -17,8 +18,14 @@ public abstract class TestEnemy : MonoBehaviour
 {
     public EnemyData ed = new EnemyData();
     public Rigidbody2D target;
+    [SerializeField] public Player player;
+    public float speed;
     public abstract void Initialize();
-
+    public virtual void SetTarget()
+    {
+        target = GameManager.instance.player.GetComponent<Rigidbody2D>();
+        Debug.Log(target);
+    }
     public virtual void Move()
     {
         Debug.Log(ed.speed);
@@ -28,7 +35,7 @@ public abstract class TestEnemy : MonoBehaviour
             return;
 
         Vector2 dirVec = target.position - ed.rigid.position;
-        Vector2 nextVec = dirVec.normalized * ed.speed * Time.fixedDeltaTime;
+        Vector2 nextVec = dirVec.normalized * speed * Time.fixedDeltaTime;
         ed.rigid.MovePosition(ed.rigid.position + nextVec);
         ed.rigid.velocity = Vector2.zero;
         Debug.Log(ed.speed);
@@ -43,9 +50,5 @@ public abstract class TestEnemy : MonoBehaviour
         else
             return;
     }
-    public virtual void SetTarget()
-    {
-        target = GameManager.instance.player.GetComponent<Rigidbody2D>();
-        Debug.Log(target);
-    }
+
 }
