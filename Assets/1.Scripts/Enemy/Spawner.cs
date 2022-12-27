@@ -5,7 +5,6 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField] public Transform[] spawnPoint;
-    [SerializeField] public SpawnData[] spawnData;
 
     int level;
     float timer;
@@ -31,13 +30,4 @@ public class Spawner : MonoBehaviour
         GameObject enemy = GameManager.instance.spawn.Get(level);
         enemy.transform.position = spawnPoint[Random.Range(1, spawnPoint.Length)].transform.position;
     }
-}
-
-[System.Serializable]
-public class SpawnData
-{
-    public int hp;
-    public int spriteType;
-    public float speed;
-    public float spawnTime;
 }

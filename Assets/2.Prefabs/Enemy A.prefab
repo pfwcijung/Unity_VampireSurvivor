@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1142654445613121634}
   - component: {fileID: 7061172070504101978}
-  - component: {fileID: 1142654445613121632}
+  - component: {fileID: -8861335023213744913}
   - component: {fileID: 1142654445613121629}
   - component: {fileID: 1142654445613121628}
   - component: {fileID: 1142654445613121631}
@@ -45,13 +45,13 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1142654445613121625}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7a6d0d0e2886888469dc636fabbe67cc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
---- !u!114 &1142654445613121632
+--- !u!114 &-8861335023213744913
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -60,9 +60,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1142654445613121625}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48a858c2653fffe40b1627b1cf21ecc5, type: 3}
+  m_Script: {fileID: 11500000, guid: af5908fa42f061543ba5ffe8d22d89e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  target: {fileID: 0}
 --- !u!212 &1142654445613121629
 SpriteRenderer:
   m_ObjectHideFlags: 0

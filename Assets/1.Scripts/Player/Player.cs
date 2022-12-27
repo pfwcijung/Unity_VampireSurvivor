@@ -7,6 +7,11 @@ public class Player : MonoBehaviour
 {
     private float speed = 3f;
     public Vector2 inputVec;
+    public HpController hpCont;
+
+
+    float curHp = 100;
+    float maxHp = 100;
 
     Animator anim;
     Rigidbody2D rigid;
@@ -37,5 +42,17 @@ public class Player : MonoBehaviour
         {
             sprite.flipX = inputVec.x < 0;
         }
+    }
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag.Equals("Enemy"))
+        {
+            Damage(.5f);
+        }
+    }
+    public void Damage(float damage)
+    {
+        curHp -= damage;
+        hpCont.SetRenderSize(curHp, maxHp);
     }
 }
