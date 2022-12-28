@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
 
         if(exp >= lvUpExp)
         {
+            //레벨 업 캔버스 활성화
+
             level++;
             exp = 0;
             lvUpExp *= 2;

@@ -12,11 +12,7 @@ public class SceneChanger : MonoBehaviour
 
     void Start()
     {
-        titleCanvas.enabled = true;
-        playCanvas.enabled = false;
-        lvupCanvas.enabled = false;
-        clearCanvas.enabled = false;
-        overCanvas.enabled = false;
+
     }
 
 }

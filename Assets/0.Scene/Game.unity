@@ -4719,7 +4719,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 352780027}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1268953404}
+        m_TargetAssemblyTypeName: UILvUpController, Assembly-CSharp
+        m_MethodName: OnChooseSkill
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &352780027
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7232,6 +7244,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268953403}
   - component: {fileID: 1268953402}
+  - component: {fileID: 1268953404}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -7270,6 +7283,22 @@ Transform:
   m_Father: {fileID: 139442343}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1268953404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1268953401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c33517f63753a7a4aad6ab9564af797d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttons:
+  - {fileID: 1812408151}
+  - {fileID: 352780026}
+  - {fileID: 1406055794}
 --- !u!1 &1275202320
 GameObject:
   m_ObjectHideFlags: 0
@@ -16016,7 +16045,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1352332245
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16323,7 +16352,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1406055795}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1268953404}
+        m_TargetAssemblyTypeName: UILvUpController, Assembly-CSharp
+        m_MethodName: OnChooseSkill
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1406055795
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17836,6 +17877,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1811184947}
   - component: {fileID: 1811184950}
+  - component: {fileID: 1811184952}
   - component: {fileID: 1811184946}
   - component: {fileID: 1811184949}
   - component: {fileID: 1811184948}
@@ -17962,7 +18004,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1811184945}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d43146e5ebb8cdf4e891306cd7fcd59a, type: 3}
   m_Name: 
@@ -17971,7 +18013,7 @@ MonoBehaviour:
   hpCont: {fileID: 4686824002910778611}
 --- !u!95 &1811184951
 Animator:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -17988,7 +18030,21 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1811184952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1811184945}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fda04794079ffb48820b75a6b8be549, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputVec: {x: 0, y: 0}
+  hp: {fileID: 4686824002910778611}
 --- !u!1 &1812408149
 GameObject:
   m_ObjectHideFlags: 0
@@ -18072,7 +18128,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1812408152}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1268953404}
+        m_TargetAssemblyTypeName: UILvUpController, Assembly-CSharp
+        m_MethodName: OnChooseSkill
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1812408152
 MonoBehaviour:
   m_ObjectHideFlags: 0

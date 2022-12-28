@@ -15,6 +15,8 @@ public class UILvUpController : MonoBehaviour
     public void OnChooseSkill(int chooseIndex)
     {
         //스킬 레벨 상승
+
+        //레벨업 캔버스 비 활성화
     }
 
 }
